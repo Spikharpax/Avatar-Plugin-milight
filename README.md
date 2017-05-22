@@ -5,8 +5,6 @@ Ce plugin est un add-on pour le pour le framework [Avatar](https://github.com/Sp
 
 Il permet le contrôle des ampoules Mi-Light.
 
-![GitHub Logo](/logo/Pebble.jpg)
-
 
 ## Installation
 
