@@ -1,7 +1,7 @@
 Mi-Light
 ========
 
-Ce plugin est un add-on pour le pour le framework [Avatar](https://github.com/Spikharpax/Avatar-Serveur)
+Ce plugin est un add-on pour le framework [Avatar](https://github.com/Spikharpax/Avatar-Serveur)
 
 Il permet le contrôle des ampoules RGBW Wifi Mi-Light.
 
