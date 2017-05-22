@@ -15,7 +15,7 @@ Il permet le contrôle des ampoules RGBW Wifi Mi-Light.
 - Copiez le répertoire `milight` dans le répertoire `Avatar-Serveur/plugins`
 - Copiez le fichier `intents/intent.rgb.js` dans le répertoire `Avatar-Serveur/ia/intents/`
 - Copiez le fichier `actions/action.milight.js` dans le répertoire `Avatar-Serveur/ia/actions/`
-- Editez le fichier `Avatar-Serveur/ia/actions/index.js`, allez à la fin du fichier et juste avant `function _interopRequireDefault(obj)` ajoutez les lignes suivantes
+- Editez le fichier `Avatar-Serveur/ia/actions/index.js`, allez à la fin du fichier et juste avant `function _interopRequireDefault(obj)` ajoutez les lignes suivantes:
 
 ```javascript
 var _actionMilight = require('./action.milight');
@@ -31,7 +31,7 @@ Object.defineProperty(exports, 'milight', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 ```
 
-- Editez le fichier `Avatar-Serveur/ia/intents/index.js`, allez à la fin du fichier et juste avant `function _interopRequireDefault(obj)` ajoutez les lignes suivantes
+- Editez le fichier `Avatar-Serveur/ia/intents/index.js`, allez à la fin du fichier et juste avant `function _interopRequireDefault(obj)` ajoutez les lignes suivantes:
 
 ```javascript
 var _intentMilight = require('./intent.rgb');
@@ -75,11 +75,13 @@ exports.intent = function () {
 
 
 ## Configuration
+
 La configuration du plugin se fait dans le fichier `Avatar-Serveur/plugins/milight/milight.prop`
 
 ### Adresse IP du contrôleur
 Ajoutez dans la propriété "ip", l'adresse IP de votre contrôleur Mi-Light.
 
+Exemple
 ```xml
 "ip": "192.168.0.10",
 ```	
@@ -100,12 +102,13 @@ Une seule zone est définie dans ce plugin (la zone 1).
 
 Ajoutez dans la propriété "zone", la zone associée aux actions des règles.
 
+Exemple
 ```xml
 "zone": 1,
 ```	
 	
 
-## Règles	
+## Les règles	
 
 Les règles sont définies dans le fichier `Avatar-Serveur/plugins/milight/milight.prop` dans les tableaux suivants:
 - "rules" : Les commandes simples ("On","Off", "mets le rgb en blanc")
