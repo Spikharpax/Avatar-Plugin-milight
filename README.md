@@ -91,7 +91,8 @@ Si vous ne connaissez pas l'adresse IP du contrôleur, vous pouvez utiliser la r
 Si vous désirez garder les autres infos affichées pour information (elles ne sont pas utilisées), vous pouvez les ajouter dans les autres propriétés "mac" et "name".
 
 **Important**
-Ce plugin est défini pour fonctionner avec le contrôleur Mi-Light version **v6** (La version est affichée dans la console avec les autres informations).
+
+Ce plugin fonctionne avec le contrôleur Mi-Light version **v6** (La version est affichée dans la console avec les autres informations).
 
 Pour piloter un contrôleur plus ancien, voir la documentation de [node-milight-promise](https://github.com/mwittig/node-milight-promise).
 
