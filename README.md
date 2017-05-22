@@ -93,14 +93,14 @@ Si vous désirez garder les autres infos affichées pour informations (elles ne 
 **Important**
 Ce plugin est défini pour fonctionner avec le contrôleur Mi-Light version **v6** (La version est affichée dans la console avec les autres informations).
 
-Pour piloter un contrôleur plus ancien, vous disposez des fonctions nécessaires dans ce plugin mais vous devrez changer l'appel et les fonctions dans le fichier milight.js (voir la documentation de [node-milight-promise](https://github.com/mwittig/node-milight-promise)).
+Pour piloter un contrôleur plus ancien, voir la documentation de [node-milight-promise](https://github.com/mwittig/node-milight-promise).
 
 
 ### zone
 
 Une seule zone est définie dans ce plugin (la zone 1).
 
-Ajoutez dans la propriété "zone", la zone associée aux actions des règles.
+Ajoutez dans la propriété "zone", la zone Mi-Light associée aux actions des règles.
 
 Exemple
 ```xml
