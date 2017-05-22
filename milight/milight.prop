@@ -1,0 +1,26 @@
+{
+  "modules" : { 
+    "milight" : {
+		"description": "Gestion des ampoules RGBW Wifi Mi-Light",
+		"version": "1.0",
+		"ip" : "",
+		"mac": "",
+		"name": "",
+		"zone" : 1,
+		"intentRules" : ["lightColor","rules"],
+		"rules" : {
+			"rgbOn" : ["rgb on","turn on * (rgb|paper)","on * rgb"],
+			"rgbOff" : ["rgb off","turn off * (rgb|paper)","off * rgb"],
+			"whiteMode" : ["rgb * white","rgb en blanc"],
+			"discover" : ["rgb information","rgb * information","rgb * address","address * rgb"]
+		},
+		"lightColor":{
+			"command" : "hue",
+			"100" 	: ["rgb * green"],
+			"180" 	: ["rgb * blue"],
+			"255" 	: ["rgb * magenta"],
+			"59" 	: ["rgb * yellow"]
+		}
+    }
+  }
+}
