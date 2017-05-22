@@ -86,9 +86,9 @@ Exemple
 "ip": "192.168.0.10",
 ```	
 
-Si vous ne connaissez pas l'adresse IP du contrôleur, vous pouvez utilisez la règle "donnes-moi les informations du rgb". Avatar vous retournera sur la console l'adresse IP du contrôleur Mi-Light qui se trouve sur votre réseau Wifi.
+Si vous ne connaissez pas l'adresse IP du contrôleur, vous pouvez utiliser la règle "donnes-moi les informations du rgb". Avatar vous retournera sur la console l'adresse IP du contrôleur Mi-Light qui se trouve sur votre réseau Wifi.
 
-Si vous désirez garder les autres infos affichées pour informations (elles ne sont pas utilisées), vous pouvez les ajoutez dans les autres propriétés "mac" et "name".
+Si vous désirez garder les autres infos affichées pour information (elles ne sont pas utilisées), vous pouvez les ajouter dans les autres propriétés "mac" et "name".
 
 **Important**
 Ce plugin est défini pour fonctionner avec le contrôleur Mi-Light version **v6** (La version est affichée dans la console avec les autres informations).
@@ -98,9 +98,9 @@ Pour piloter un contrôleur plus ancien, voir la documentation de [node-milight-
 
 ### zone
 
-Une seule zone est définie dans ce plugin (la zone 1).
+Une seule zone peut être pilotée dans ce plugin.
 
-Ajoutez dans la propriété "zone", la zone Mi-Light associée aux actions des règles.
+Mettez dans la propriété "zone", la zone Mi-Light associée aux actions des règles.
 
 Exemple
 ```xml
