@@ -5,73 +5,12 @@ Ce plugin est un add-on pour le framework [Avatar](https://github.com/Spikharpax
 
 Il permet le contrôle des ampoules RGBW Wifi Mi-Light.
 
-
 ![GitHub Logo](/logo/milight.jpg)
 
 
 ## Installation
-
 - Dézippez le fichier `Avatar-Plugin-milight-Master.zip` dans un répertoire temporaire
 - Copiez le répertoire `milight` dans le répertoire `Avatar-Serveur/plugins`
-- Copiez le fichier `intents/intent.rgb.js` dans le répertoire `Avatar-Serveur/ia/intents/`
-- Copiez le fichier `actions/action.milight.js` dans le répertoire `Avatar-Serveur/ia/actions/`
-- Editez le fichier `Avatar-Serveur/ia/actions/index.js`, allez à la fin du fichier et juste avant `function _interopRequireDefault(obj)` ajoutez les lignes suivantes:
-
-```javascript
-var _actionMilight = require('./action.milight');
-
-Object.defineProperty(exports, 'milight', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_actionMilight).default;
-  }
-});
-
-// Fin du fichier...
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-```
-
-- Editez le fichier `Avatar-Serveur/ia/intents/index.js`, allez à la fin du fichier et juste avant `function _interopRequireDefault(obj)` ajoutez les lignes suivantes:
-
-```javascript
-var _intentMilight = require('./intent.rgb');
-
-Object.defineProperty(exports, 'rgb', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_intentMilight).default;
-  }
-});
-
-// Fin du fichier...
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-```
-
-- Editez le fichier `Avatar-Serveur/ia/index.js`
-	- Ajoutez dans l'import des intents, l'intent `rgb`
-	- Ajoutez dans l'import des actions, l'action `milight`
-	- Ajoutez dans la fonction export.intent(), l'association intention-action
-
-```javascript
-import { rgb, weather, hour,  blague, manageAvatar, translate, lastAction, intentEnd} from './intents';
-import { milight, forecastMsn, forecastYahoo, worldHour, jokeOfDay, avatarRules, translator, backupAction, actionEnd} from './actions';
-
-
-exports.intent = function () {
-
-	// Configure the intents
-	ava
-	 .intent(translate, translator)
-	 .intent(hour, worldHour)
-	 .intent(weather, [forecastYahoo, forecastMsn])
-	 // Déclaration Mi-Light ICI !!!
-	 .intent(rgb, milight)
-	 .intent(blague, jokeOfDay)
-	 .intent(manageAvatar, avatarRules)
-	 .intent(lastAction, backupAction)
-	 .intent(intentEnd, actionEnd)  // Toujours à la fin, controle si une règle est passée
-}
-```
 
 
 ## Configuration
@@ -128,6 +67,8 @@ Vous pouvez ajouter des couleurs, les modifier...
 	
 
 ## Versions
+Version 1.1 (03-11-2017)
+- Les fichiers intent et action déplacés dans le répertoire du plugin. Chargés automatiquemet (Avatar serveur 0.1.5)
 
 Version 1.0 - 14/05/2017
 - Initial version
