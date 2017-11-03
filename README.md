@@ -68,7 +68,7 @@ Vous pouvez ajouter des couleurs, les modifier...
 
 ## Versions
 Version 1.1 (03-11-2017)
-- Les fichiers intent et action déplacés dans le répertoire du plugin. Chargés automatiquemet (Avatar serveur 0.1.5)
+- Les fichiers intent et action déplacés dans le répertoire du plugin. Chargés automatiquement (Avatar serveur 0.1.5)
 
 Version 1.0 - 14/05/2017
 - Initial version
